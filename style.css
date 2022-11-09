@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+  }
+   
+
+  /* Header Section*/
+  .navbar {
+    background-color: #333333;
+    position: fixed; /*to fix the header. Also need to adjust Main: "Position: relative & top: 80px' >> fix Header again with 'Z-index: 1'.*/
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    height: 69px;
+    width: 100%;
+  }
+
+  .navbar img {
+    height: 70px;
+  }
+   
+  .navbar nav {
+    display: flex;
+    gap: 1em;
+    margin-left: auto; /*to position the nav links to the right of the page*/
+    
+  }
+  
+
+  nav a {
+    color: rgb(183, 183, 183);
+    font-weight: 600;
+    padding: 0 30px;
+    justify-content: flex-end;
+
+  }
+
+
+  /*Main Section with Blocks*/
+  .main-content {
+    background-color:#333333;
+    position: relative;
+    top: 85px;
+    display: block;
+    margin: auto;
+    width:100%;
+
+  }
+
+  h2, h4, h3, h5, p {
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+  }
+
+  /*Section: Mission*/
+
+  .mission-section {
+    width: 90%;
+    display: flex;
+    height: 700px;
+    background-image: url('img-mission-background.jpg') ;
+    background-repeat: none;
+    background-size: cover;
+    align-items: center;
+    margin: auto; /*centers the section wrapper against the Main*/
+
+
+  }
+  .mission-content {
+    background-color: #333333;
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin: auto; /*centered Our Mission black block against the pic background*/
+  }
+  
+
+  /*Section: Featured Tea*/
+
+  .tea-section {
+    width: 80%;
+    margin: auto; /*centers the section wrapper against the Main*/
+  }
+
+  .tea-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1;
+    margin: auto; 
+    max-width: 1000px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .tea-item {
+  padding: 10px;
+  display: block;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  font-size: 18px ;
+  font-weight: bold;
+
+  }
+
+  .tea-item > img {
+      width: 300px;
+      height: 200px;
+  }
+    
+    /*Section: Locations*/
+  .locations-section {
+      height: 500px;
+      width: 90%;
+      background-image: url('img-locations-background.jpg') ;
+      background-repeat: no-repeat;
+      background-position: center; /*centers the image in its container*/
+      background-size: cover; /*does not do anything in our case, but in general scales the background image to cover the entire background of the element, all while keeping the image in proportion. */
+      margin: auto; /*centers the section wrapper against the Main*/
+      display: block; /*positions 'Location' text above location-containers.*/
+
+  }
+
+  .location-container {
+      display: flex;
+      justify-content: center; /*centers the location-containers against the wrapper, need to go with Display: flex above!*/
+      align-items: center;
+  }
+
+  .location-item {
+      width: 300px;
+      opacity: 1;
+      background-color: black;
+      display: inline-block;
+      margin: 15px 20px;
+      text-align: center;
+
+  }
+  #locations {
+    padding: 50px 0 0 0;
+  }
+
+  .contacts-section {
+    height: 200px;
+    width: 100%;
+
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+
+  }
+  footer h5 {
+    text-align: left;
+    padding: 20px;
+    margin: auto;
+  }
